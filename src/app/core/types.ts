@@ -1,9 +1,9 @@
 type TMixColumn = Array<any>;
 type TStandardColumn<M> = Array<keyof M>;
-type TSerializeColum<M> = {
+type TSerializeColum<M> = Array<{
   name: keyof M;
   serialize: string;
-};
+}>;
 type IMixColumn<R> =
   | {
       serialize: true;
